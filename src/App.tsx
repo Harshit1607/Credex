@@ -1,6 +1,7 @@
 import HeroSection from './components/HeroSection'
 import HowItWorks from './components/HowItWorks'
 import Navbar from './components/Navbar'
+import Reviews from './components/Reviews'
 import WhyChooseUs from './components/WhyChooseUs'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <HeroSection />
         <HowItWorks />
         <WhyChooseUs />
+        <Reviews />
       </div>
     </>
   )
