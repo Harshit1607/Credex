@@ -1,8 +1,10 @@
 import React from 'react'
+import home from '../assets/home.png'
 
 const WhyChooseUs: React.FC = () => {
   return (
-    <div  className="w-[100vw] h-[100dvh] flex flex-col justify-start gap-10 items-center py-10">
+    <div  className=" relative w-[100vw] h-[100dvh] flex flex-col justify-start gap-10 items-center py-10">
+      <img src={home} alt="home"  className='absolute opacity-70 w-[40vw] h-[50vh] top-[35vh] right-[5vw] rounded-4xl'/>
       <div className="w-[90%] h-[20%] flex justify-start items-center text-[8vw] font-bold">Why Choose SoftSell?</div>
       <div className='w-[90%] h-[70%] flex flex-col justify-around items-center'>
         <div className='flex flex-col w-full justify-between items-start'>

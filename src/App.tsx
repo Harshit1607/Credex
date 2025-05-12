@@ -1,3 +1,4 @@
+import Contact from './components/Contact'
 import HeroSection from './components/HeroSection'
 import HowItWorks from './components/HowItWorks'
 import Navbar from './components/Navbar'
@@ -14,6 +15,7 @@ function App() {
         <HowItWorks />
         <WhyChooseUs />
         <Reviews />
+        <Contact />
       </div>
     </>
   )
