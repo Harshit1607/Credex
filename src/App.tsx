@@ -1,24 +1,22 @@
-import Contact from './components/Contact'
-import HeroSection from './components/HeroSection'
-import HowItWorks from './components/HowItWorks'
-import Navbar from './components/Navbar'
-import Reviews from './components/Reviews'
-import WhyChooseUs from './components/WhyChooseUs'
+import MovingGradient from './components/MovingGradient';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import HowItWorks from './components/HowItWorks';
+import WhyChooseUs from './components/WhyChooseUs';
+import Reviews from './components/Reviews';
+import Contact from './components/Contact';
 
 function App() {
-
   return (
-    <>
-      <div>
-        <Navbar />
-        <HeroSection />
-        <HowItWorks />
-        <WhyChooseUs />
-        <Reviews />
-        <Contact />
-      </div>
-    </>
-  )
+    <MovingGradient className="min-h-screen w-full">
+      <Navbar />
+      <HeroSection />
+      <HowItWorks />
+      <WhyChooseUs />
+      <Reviews />
+      <Contact />
+    </MovingGradient>
+  );
 }
 
-export default App
+export default App;

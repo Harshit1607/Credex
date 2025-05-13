@@ -50,20 +50,21 @@ body {
   }
 }
 
+/* Blob animation for the blurry blobs effect */
 @keyframes blob {
   0%, 100% {
-    transform: translate(0px, 0px) scale(1);
+    transform: translate(0, 0) scale(1);
   }
   33% {
-    transform: translate(40px, -30px) scale(1.1);
+    transform: translate(50px, -50px) scale(1.3);
   }
   66% {
-    transform: translate(-30px, 20px) scale(0.9);
+    transform: translate(-40px, 40px) scale(0.8);
   }
 }
 
 .animate-blob {
-  animation: blob 8s infinite ease-in-out;
+  animation: blob 12s infinite ease-in-out;
 }
 
 .animation-delay-2000 {
@@ -72,4 +73,28 @@ body {
 
 .animation-delay-4000 {
   animation-delay: 4s;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  animation: gradient 5s ease infinite;
 }
