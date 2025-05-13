@@ -1,54 +1,50 @@
-# React + TypeScript + Vite
+# SoftSell – React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, single-page marketing website for a fictional software license resale startup – **SoftSell**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💡 Why This Theme?
 
-## Expanding the ESLint configuration
+I chose this theme because the **color palette is minimal yet visually appealing**. The accent color `#BE4564` (a pinkish-red) adds personality without overwhelming the design. The overall look stays professional, modern, and tech-focused — just right for a startup like SoftSell.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## ✨ Features Implemented
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- ✅ **Hero Section** with CTA
+- ✅ **How It Works** in 3 simple steps
+- ✅ **Why Choose Us** section with illustrated highlights
+- ✅ **Customer Testimonials**
+- ✅ **Contact / Lead Form** with **form validation**
+- ✅ **Blurry blob background** for subtle depth
+- ✅ **Light/Dark Mode support** using Tailwind CSS
+- ✅ **OpenAI-powered Chat** component
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🎨 Design Choices
+
+- **Minimal layout** with lots of whitespace for clarity
+- **Responsive design** using Tailwind CSS
+- Used illustrations and icons to maintain a lightweight and tech-focused vibe
+- Background visuals have a **blurred glassmorphism effect** for a modern look
+- Typography was kept simple and legible
+- Ensured all sections flow naturally in a single scrollable view
+
+---
+
+## ⏱️ Time Spent
+
+- 🧠 ~3 hours brainstorming layout, colors, illustrations, and structure
+- 🛠️ ~1 hour implementing major features like validation and API integration
+
+---
+
+## 🛠️ Tech Stack
+
+- **React + TypeScript**
+- **Vite** for fast development
+- **Tailwind CSS** for utility-first styling
+- **OpenAI API** (for chat demo)
+- **Custom illustrations** generated and color-matched with the theme
