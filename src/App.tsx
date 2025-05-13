@@ -5,6 +5,7 @@ import HowItWorks from './components/HowItWorks';
 import WhyChooseUs from './components/WhyChooseUs';
 import Reviews from './components/Reviews';
 import Contact from './components/Contact';
+import AIChat from './components/AiChat';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <WhyChooseUs />
       <Reviews />
       <Contact />
+      <AIChat />
     </MovingGradient>
   );
 }

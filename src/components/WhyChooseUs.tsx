@@ -33,7 +33,7 @@ function calculateCardRotation({
 }
 
 // Custom hook for mouse position tracking
-const useMousePosition = (ref: React.RefObject<HTMLElement>, callback: (coords: { x: number; y: number }) => void) => {
+const useMousePosition = <T extends HTMLElement>(ref: React.RefObject<T | null>, callback: (coords: { x: number; y: number }) => void) => {
   React.useEffect(() => {
     if (!ref.current) return;
     
@@ -67,7 +67,8 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ title, description }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const resetRef = useRef<NodeJS.Timeout>();
+  // Fix: Change the type to number | undefined instead of NodeJS.Timeout | undefined
+  const resetRef = useRef<number | undefined>(undefined);
   
   const update = useCallback(({ x, y }: { x: number; y: number }) => {
     if (!containerRef.current) {
@@ -97,7 +98,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description }) => {
         transitionDuration: "50ms",
       }}
       onMouseEnter={() => {
-        resetRef.current = setTimeout(() => {
+        resetRef.current = window.setTimeout(() => {
           if (!containerRef.current) {
             return;
           }
@@ -106,7 +107,10 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description }) => {
         }, 300);
       }}
       onMouseLeave={() => {
-        clearTimeout(resetRef.current);
+        if (resetRef.current !== undefined) {
+          window.clearTimeout(resetRef.current);
+          resetRef.current = undefined;
+        }
         if (!containerRef.current) {
           return;
         }
