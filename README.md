@@ -36,8 +36,8 @@ I chose this theme because the **color palette is minimal yet visually appealing
 
 ## ⏱️ Time Spent
 
-- 🧠 ~3 hours brainstorming layout, colors, illustrations, and structure
-- 🛠️ ~1 hour implementing major features like validation and API integration
+- 🧠 ~2-3 hours brainstorming layout, colors, illustrations, and structure
+- 🛠️ ~2-3 hour implementing major features like validation and API integration
 
 ---
 
