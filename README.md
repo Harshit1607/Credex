@@ -18,7 +18,6 @@ I chose this theme because the **color palette is minimal yet visually appealing
 - ✅ **Customer Testimonials**
 - ✅ **Contact / Lead Form** with **form validation**
 - ✅ **Blurry blob background** for subtle depth
-- ✅ **Light/Dark Mode support** using Tailwind CSS
 - ✅ **OpenAI-powered Chat** component
 
 ---
